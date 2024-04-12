@@ -1,0 +1,57 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+    background-image: url('/assets/images/loginback.jpg');
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+  }
+  
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center;
+    width: 450px;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  label{
+    float: left;
+  }
+.cancelbtn{
+  text-decoration: none;
+    color: white;
+}
+
+button{
+    margin: 0px 10px;
+  }

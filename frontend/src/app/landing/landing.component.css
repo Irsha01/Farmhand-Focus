@@ -1,0 +1,178 @@
+.aboutus {
+    position: relative;
+    background: url(https://ozonegroups.in/images/aboutus.png) no-repeat;
+    background-position: top left;
+    background-size: cover;
+    min-height: 80vh;
+    float: left;
+    width: 100%;
+}
+.innerabout {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 60px 0;
+}
+.imgposition {
+    position: absolute;
+    top: 6%;
+    width: 40%;
+    left: 4%;
+    z-index: 1;
+}
+.imgposition img {
+    width: 100%;
+}
+.abtswapper {
+    position: relative;
+    border-top: 6px solid #247C51;
+    background: #fff;
+    padding: 50px;
+    float: left;
+    width: 100%;
+}
+.abttile {
+    position: relative;
+}
+
+.ozone_frame {
+    border-bottom: 1px solid #006432;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+
+.missionwappers {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-top: 35px;
+}
+
+
+.framing_solutions {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.framing_solutions::before {
+    content: '';
+    position: absolute;
+    background: url(https://ozonegroups.in/images/soluions.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* top: 0; */
+}
+
+.producs_tile {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.lisofproducts {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+.product {
+    background: #247C51;
+    position: relative;
+    padding: 10px;
+    border-radius: 16px;
+    margin-bottom: 26px;
+    min-height: 570px;
+}
+.img_p img {
+    width: 100%;
+}
+.wapper {
+    text-align: center;
+    padding: 30px 0 50px;
+}
+
+
+.footerimg {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 5% 0;
+}
+
+.fooimg img {
+    width: 100%;
+}
+
+.conatcinfo {
+    position: relative;
+    padding-left: 8%;
+}
+
+.infotile {
+    margin-bottom: 40px;
+}
+
+.infotile h2 {
+    font-size: 38px;
+}
+
+.ft-bold {
+    font-family: 'gilroy-extrabold', sans-serif;
+}
+
+.infotile h2 span {
+    color: #008F40;
+}
+
+.ft-med {
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+
+.office {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.scrolltop {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    z-index: 100;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.footer_sings {
+    text-align: center;
+    background: #fff;
+    padding: 14px 0;
+    float: left;
+    width: 100%;
+}
