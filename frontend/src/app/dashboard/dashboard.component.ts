@@ -27,45 +27,53 @@ ngOnInit(){
 
 single = [
   {
-    "name": "Germany",
-    "value": 1500
+    "name": "January",
+    "value": 2600
   },
   {
-    "name": "USA",
+    "name": "February",
     "value": 3000
   },
   {
-    "name": "France",
-    "value": 4500
+    "name": "March",
+    "value": 3700
   },
   {
-    "name": "India",
-    "value": 1800
+    "name": "April",
+    "value": 4800
   },
   {
-    "name": "UK",
-    "value": 4500
+    "name": "May",
+    "value": 2500
   },
   {
  
-    "name": "Australia",
+    "name": "June",
+    "value": 4700
+  },
+  {
+    "name": "July",
+    "value": 8500
+  },
+  {
+    "name": "August",
+    "value": 3800
+  },
+  {
+    "name": "September",
+    "value": 3500
+  },
+  {
+    "name": "October",
     "value": 1800
   },
   {
-    "name": "Africa",
-    "value": 4500
+    "name": "November",
+    "value": 5400
   },
   {
-    "name": "United States",
-    "value": 1800
-  },
-  {
-    "name": "Canada",
-    "value": 4500
-  },
-  {
-    "name": "Uae",
-    "value": 1800
+    "name": "December",
+    "value": 9000
   },
 ];
 

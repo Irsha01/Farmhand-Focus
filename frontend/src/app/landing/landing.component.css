@@ -1,6 +1,6 @@
 .aboutus {
     position: relative;
-    background: url(https://ozonegroups.in/images/aboutus.png) no-repeat;
+    background: url(/assets/images/aboutus.png) no-repeat;
     background-position: top left;
     background-size: cover;
     min-height: 80vh;
@@ -60,7 +60,7 @@
 .framing_solutions::before {
     content: '';
     position: absolute;
-    background: url(https://ozonegroups.in/images/soluions.png)no-repeat;
+    background: url(/assets/images/soluions.png)no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;

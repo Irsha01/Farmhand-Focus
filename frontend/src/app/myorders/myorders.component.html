@@ -1,1 +1,74 @@
-<p>myorders works!</p>
+<div class="container">
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container">
+          <a class="navbar-brand" href="/dashboard"><img src="assets/images/logo.png" height="60px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" routerLink="/products" >Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" routerLink="/myorders" >My Orders</a>
+              </li>
+              <ng-container *ngIf="Username=='Admin'">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" routerLink="/addproduct">Add Product</a>
+                  </li>
+              </ng-container>
+              
+            </ul>
+            <div style="position: relative;">
+             
+            <button (click)="logout()" class="btn btn-primary logout">Logout</button>
+        </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+    <div class="container">
+        <div class="alert alert-warning alert-dismissible fade show mt-4" role="alert" *ngIf="showmessage!=''">
+            <strong>{{showmessage}}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+
+        <div *ngFor="let product of productdetail">
+           <table class="table table-primary mt-3">
+            <thead>
+                <tr class="firstrow">
+                    <th colspan="2">Order id : {{product.orderid}}</th>
+                                 
+                         <th colspan="2">Address : {{product.address}}</th>
+                   
+                </tr>
+                
+                   <tr>
+                    <th>Product Name</th>
+                    <th>price</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                   </tr> 
+                </thead>
+                <tbody>
+                   <tr *ngFor="let item of product.products">
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.quantity}}</td>
+                    <td>{{item.price}}</td>
+                   </tr> 
+                   <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Total Amount</th>
+                    <th>{{product.totalamount}}</th>
+                   </tr>  
+                </tbody>
+        </table>
+          </div>
+    </div>

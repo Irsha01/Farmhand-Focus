@@ -1,7 +1,71 @@
 <div class="container">
-
-    <div class="list-item">
-        <div class="items" ></div>
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container">
+          <a class="navbar-brand" href="/dashboard"><img src="assets/images/logo.png" height="60px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/products" >Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/myorders" >My Orders</a>
+              </li>
+              <ng-container *ngIf="Username=='Admin'">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" routerLink="/addproduct">Add Product</a>
+                  </li>
+              </ng-container>
+             
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Offers</a>
+              </li>
+              <li class="nav-item dropdown dropdown-item">
+                <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+            </ul>
+            <div style="position: relative;">
+              <i class="fas fa-shopping-cart" routerLink="/cart"></i>
+              <span  class="cartcount"> {{ cartService.totalItems }} 
+              
+            </span>
+            <button (click)="logout()" class="btn btn-primary logout">Logout</button>
+        </div>
+          </div>
+        </div>
+      </nav>
     </div>
 
-</div>
+
+
+<!-- products.component.html -->
+<div class="container mt-3">
+    <div class="row">
+      <div class="col-md-3 mt-2" *ngFor="let product of products">
+        <div class="card">
+          <img [src]="product.image" class="card-img-top" alt="{{product.name}}">
+          <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">{{product.description | truncate: 8}}</p>
+            <p class="card-text">Price: ₹ {{product.price}}</p>
+            <button class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
+            <span class="iconclass" *ngIf="Username=='Admin'"   >
+              <i class="fas fa-edit" (click)="editproduct(product)"></i> <!-- Edit icon -->
+              <i class="fas fa-trash-alt"  (click)="showAlert(product)"></i> <!-- Delete icon -->
+            </span>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  

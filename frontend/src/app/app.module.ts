@@ -17,6 +17,8 @@ import { ProductlistComponent } from './productlist/productlist.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { MyordersComponent } from './myorders/myorders.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { TruncatePipe } from './truncate.pipe';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -28,7 +30,9 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     DashboardComponent,
     ProductlistComponent,
     AddproductComponent,
-    MyordersComponent
+    MyordersComponent,
+    TruncatePipe,
+    CartComponent
     
   ],
   imports: [

@@ -45,10 +45,10 @@ export class LoginComponent implements OnInit{
         },
         error => {
           if (error.status === 401) {
-            alert(error.message);
+            alert('Invalid Username or Password');
           }
           if (error.status === 404) {
-            alert(error.message);
+            alert('Invalid Username or Password');
           }
           // Handle error
         }

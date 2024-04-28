@@ -45,7 +45,10 @@ label{
     margin: 5px 0px;
 }
 
-.firstrow {
-    background-color: #f2f2f2; /* Set the background color */
-    background-color:red; /* Set the background color */
-  }
+
+.modal-footer button{
+    margin: 0 10px;
+}
+textarea{
+    border:5px solid #ddd;
+}

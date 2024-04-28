@@ -1,0 +1,7 @@
+.navbar-collapse{
+    justify-content: space-between;
+}
+.nav-link.active{   
+     background: white;
+    border-radius: 12px;
+}

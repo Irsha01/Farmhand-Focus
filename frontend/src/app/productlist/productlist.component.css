@@ -1,0 +1,43 @@
+.card-img-top{
+    height: 150px;
+}
+
+.card{
+    height: 360px;
+    margin-bottom: 12px;
+    box-shadow: 5px 5px 10px 5px #ddd;
+}
+
+.navbar-collapse{
+    justify-content: space-between;
+}
+.nav-link.active{   
+    background: white;
+   border-radius: 12px;
+}
+.iconclass{
+    float:right;
+    margin: 0 10px;
+    .fas{
+        margin: 0 10px;
+    font-size: 24px;
+    }
+}
+nav .fas{
+    color:white;
+    font-size:24px;
+}
+
+.cartcount{
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    color: green !important;
+    background: white;
+    padding: 3px;
+    border-radius:12px
+}
+
+.logout{
+    margin:0 10px 0 20px;
+}
